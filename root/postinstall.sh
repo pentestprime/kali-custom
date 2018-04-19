@@ -26,11 +26,14 @@ echo 'Init Metacploit Database'
 msfdb init
 echo 'Init File Locater Database'
 updatedb
+echo 'Get Stuff from github'
 echo 'Get Veil Framework'
 git clone https://github.com/Veil-Framework/Veil.git
 echo 'Get Discover Scripts for Gethub'
 git clone https://github.com/leebaird/discover.git
-  pause
+echo 'Get Penetration Testing Framework'
+git clone https://github.com/trustedsec/ptf
+pause
 apt upgrade -y
 echo ''
 echo 'Finished.............'
