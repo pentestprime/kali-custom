@@ -11,17 +11,13 @@ apt update
 echo 'Update RSA SSH Keys'
 ssh-keygen -t rsa
 systemctl restart ssh
-systemctl start cups
-systemctl start apache2
-systemctl start mysql
-systemctl start postgresql
-systemctl start tor
-systemctl enable ssh
-systemctl enable cups
-systemctl enable apache2
-systemctl enable mysql
-systemctl enable postgresql
-systemctl enable tor
+systemctl enable ssh --mew
+systemctl enable cups --new
+systemctl enable apache2 --new
+systemctl enable mysql --new
+systemctl enable postgresql --new
+systemctl enable tor --new
+systemctl enable cockpit.socket --new
 echo 'Init Metacploit Database'
 msfdb init
 echo 'Init File Locater Database'
