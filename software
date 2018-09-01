@@ -1,6 +1,7 @@
 open-vm-tools-desktop
 libreoffice
 fuse
+guake
 htop
 exfat-fuse
 exfat-utils
