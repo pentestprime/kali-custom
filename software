@@ -1,6 +1,5 @@
 open-vm-tools-desktop
 libreoffice
-fuse
 guake
 htop
 exfat-fuse
@@ -11,7 +10,6 @@ proxychains
 scrub
 vega
 bleachbit
-metagoofil
 screenfetch
 cherrytree
 cups
@@ -19,4 +17,7 @@ cups-client
 foomatic-db
 cockpit
 fwbuilder
+ufw
+firewalld
+firewall-config
 gimp
