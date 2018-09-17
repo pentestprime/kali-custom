@@ -29,7 +29,6 @@ echo 'Get Discover Scripts for Gethub'
 git clone https://github.com/leebaird/discover.git
 echo 'Get Penetration Testing Framework'
 git clone https://github.com/trustedsec/ptf
-pause
 apt upgrade -y
 echo ''
 echo 'Finished.............'

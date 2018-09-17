@@ -4,7 +4,7 @@ function pause(){
 echo 'Press any key to continue...';   read -p "$*"
 }
 clear
-input="/bin/menu.txt"
+input="menu.txt"
 while IFS= read -r var
 do
   echo "$var"
