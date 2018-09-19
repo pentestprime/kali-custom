@@ -11,13 +11,13 @@ apt update
 echo 'Update RSA SSH Keys'
 ssh-keygen -t rsa
 systemctl restart ssh
-systemctl enable ssh --now
 systemctl enable cups --now
 systemctl enable apache2 --now
 systemctl enable mysql --new
 systemctl enable postgresql --now
 systemctl enable tor --now
 systemctl enable cockpit.socket --new
+ufw enable
 echo 'Init Metacploit Database'
 msfdb init
 echo 'Init File Locater Database'
@@ -32,4 +32,6 @@ git clone https://github.com/trustedsec/ptf
 apt upgrade -y
 echo ''
 echo 'Finished.............'
-
+echo 'ufw firewall is turned on and all inbound'
+echo 'connections are closed...'
+echo 'Type ufw allow 80 to allow access to internal website...'
