@@ -27,7 +27,14 @@ cp kali.list.chroot /root/live-build-config/kali-config/variant-default/package-
 echo 'Creating and moving deb files to the isntall location'
 mkdir /root/live-build-config/kali-config/variant-default/packages.chroot
 cp *.deb /root/live-build-config/kali-config/variant-default/packages.chroot
+clear
+echo '================================================================='
+echo '================================================================='
 echo 'Step 5: Build the ISO....'
-echo 'This will take some time'
+echo '=================================================================='
+echo 'If you wish to redirect this install to a local repository'
+echo 'you may edit the live-build-config/auto/config file at this time'
+echo 'If you want to use the default repository the press Enter'
+pause
 cd /root/live-build-config
 ./build.sh --distribution kali-rolling --verbose
